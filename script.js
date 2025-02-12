@@ -95,5 +95,7 @@ function reset(){
      valores = []
      selnum.replaceChildren(null)
      res.innerHTML = null
+     num.value = null
+     num.focus()
     
 }
