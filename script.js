@@ -6,8 +6,8 @@ function adicionar(){
 
     res.innerHTML = null
     let num = window.document.getElementById('number')
-    n = Number(num.value)
-    validation = false
+    let n = Number(num.value)
+    let validation = false
 
     for (let pos in valores){
 
