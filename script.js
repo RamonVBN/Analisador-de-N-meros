@@ -19,7 +19,7 @@ function adicionar(){
     }
 
     if (num.value.length == 0 ||  n > 100 || n <= 0 || n[0] == NaN || validation == true)  {
-        window.alert('SAI DAI VIADINHO')
+        window.alert('Valor inválido ou já encontrado na lista.')
         
     } else {
 
@@ -74,7 +74,7 @@ function media(){
 
 function analisar(){
     if (valores.length == 0) {
-        window.alert('SAI dai viado da peste')
+        window.alert('Adicione valores antes de finalizar!')
         
     }else{
 
