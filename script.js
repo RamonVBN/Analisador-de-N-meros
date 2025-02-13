@@ -4,7 +4,7 @@ let res = window.document.getElementById("res");
 
 function adicionar() {
   res.innerHTML = null;
-  let num = window.document.getElementById("number");
+  var num = window.document.getElementById("number");
   let n = Number(num.value);
 
   let validation = false;
@@ -33,15 +33,15 @@ function adicionar() {
 }
 
 function menor() {
-  valores.sort();
-  let menor = valores[0];
+  
+  let menor = valores.sort()[0];
 
   return menor;
 }
 
 function maior() {
-  valores.sort();
-  let maior = valores[valores.length - 1];
+  
+  let maior = valores.sort()[valores.length - 1];
 
   return maior;
 }
@@ -80,6 +80,5 @@ function reset() {
   valores = [];
   selnum.replaceChildren(null);
   res.innerHTML = null;
-  num.value = null;
-  num.focus();
+  
 }
